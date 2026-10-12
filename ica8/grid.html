@@ -1,88 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grid Test Your Skills</title>
-  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="grid-page">
+
   <h1>Grid Test Your Skills</h1>
 
   <section>
-    <h2>Exercise 1: Grid Columns</h2>
-    <div class="grid grid-one">
-      <div>One</div>
-      <div>Two</div>
-      <div>Three</div>
-      <div>Four</div>
-    </div>
-  </section>
-
-  <section>
     <h2>Exercise 2: Overlapping Items</h2>
-    <div class="grid grid-two">
-      <div class="item-one">One</div>
-      <div class="item-two">Two</div>
+    <p>The two boxes overlap using CSS Grid.</p>
+
+    <div class="grid-demo">
+      <div class="grid-item-one">One</div>
+      <div class="grid-item-two">Two</div>
     </div>
   </section>
 
-  <section>
-    <h2>Exercise 3: Named Grid Areas</h2>
-    <div class="grid grid-three">
-      <div class="area-one">One</div>
-      <div class="area-two">Two</div>
-      <div class="area-three">Three</div>
-      <div class="area-four">Four</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Exercise 4: Cards</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="https://mdn.github.io/shared-assets/images/examples/balloons1.jpg" alt="Red balloon">
-        <ul class="tags">
-          <li>balloon</li>
-          <li>red</li>
-          <li>sky</li>
-          <li>blue</li>
-          <li>Hot air balloon</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <img src="https://mdn.github.io/shared-assets/images/examples/balloons1.jpg" alt="Red balloon">
-        <ul class="tags">
-          <li>balloon</li>
-          <li>red</li>
-          <li>sky</li>
-          <li>blue</li>
-          <li>Hot air balloon</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <img src="https://mdn.github.io/shared-assets/images/examples/balloons1.jpg" alt="Red balloon">
-        <ul class="tags">
-          <li>balloon</li>
-          <li>red</li>
-          <li>sky</li>
-          <li>blue</li>
-          <li>Hot air balloon</li>
-        </ul>
-      </div>
-    </div>
-  </section>
 </body>
 </html>
-
-
-/* when the browser us at least 600px and above 
-@media screen and (min-width: 600px) {
-    div{
-    background-color: #f0f0f0;
-    height: 100vh;
-    width: 100vw;
-}}
