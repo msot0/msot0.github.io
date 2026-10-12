@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Responsive Web Design Task: Task</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <style>
       * {
         box-sizing: border-box;
@@ -80,6 +80,54 @@
         padding: 0.5em 1em;
         color: #fff;
       }
+      /* Mobile */
+      header nav ul {
+        display: flex;
+        flex-direction: column;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+      }
+
+      .cards li {
+        margin-bottom: 0;
+      }
+
+      /* Desktop */
+      @media (min-width: 700px) {
+        header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        header nav ul {
+          flex-direction: row;
+        }
+
+        header a {
+          border-top: none;
+        }
+
+        main {
+          grid-template-columns: 2fr 1fr;
+          align-items: start;
+        }
+
+        .cards {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      
     </style>
   </head>
 
@@ -165,6 +213,7 @@
         </ul>
       </article>
       <aside class="sidebar">
+        
         <p>
           Have you discovered all of the other excellent content on this
           website?
